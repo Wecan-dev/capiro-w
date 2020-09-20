@@ -1,4 +1,6 @@
-
+body {
+    font-family: Poppins;
+}
 header{
     display: inline-block;
 }
@@ -25,7 +27,6 @@ header ul li a {
     text-decoration: none;
     margin-right:56px;
     height: 17px;
-    font-family: Poppins;
     font-size: 12px;
     font-weight: 600;
     font-stretch: normal;
@@ -47,6 +48,9 @@ main {
     margin-left: 20px;
     margin-top: 10px;
 }
+main article .col-xl-4 {
+
+} 
 main article img{
     width: 945px;
     height: 600px;
