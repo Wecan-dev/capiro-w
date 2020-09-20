@@ -45,4 +45,9 @@ header ul li a {
 }
 main {
     margin-left: 20px;
+    margin-top: 10px;
+}
+main article img{
+    width: 945px;
+    height: 600px;
 }
