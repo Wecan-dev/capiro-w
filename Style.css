@@ -92,6 +92,20 @@ main article img{
     font-weight: 200;
     font-style: normal;
 }
+.asesori {
+    position: relative;
+}
+.contenedor-de-asesoria {
+    position: absolute;
+    top: 95%;
+    background-color: #17342e;
+    width: 1273px;
+    height: 242px;
+}
+main article p .col-xl-4 {
+    
+}
+
 
 
 
