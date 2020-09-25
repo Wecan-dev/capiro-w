@@ -1,108 +1,156 @@
-body {
-    font-family: Poppins;
+[class*="col-"] {
+    width: 100%
 }
-header{
-    display: inline-block;
-}
-header img {
-    padding: 0 ;
-    width: 204px;
-    height: 62px;
-    margin-left: 20px;
-    margin-top: 6px;
-}
-header img:hover{
-    box-shadow: ;
-}
-header ul {
-    padding: 0;
-    margin-top: 25px;
-}
-header ul li{
-    list-style: none;
-    text-decoration: none;
-    padding: 0;
-}
-header ul li a {
-    text-decoration: none;
-    margin-right:56px;
-    height: 17px;
-    font-size: 12px;
-    font-weight: 600;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: 2px;
-    text-align: center;
-    color: black;
-}
- a:hover {
-    color: black;
-    cursor: pointer;
-    text-decoration: none;
-}
-.detalles-del-producto {
-    color: #aeb5bd;
-}
-main {
-    margin-left: 20px;
-    margin-top: 10px;
-}
-main article .col-xl-4 {
-    font-family: arial;
-    font-size: 50px;
-    font-weight: 500;
-    font-stretch: normal;
-    font-style: normal; 
-    line-height: normal;
-    text-align: center;
-    color: #2d2d2d
-} 
-main article img{
-    width: 100%;
-    height: 90%;
-}
-.titulo-capiro{
-    margin-top: 10% ;
-    padding: 0;
-    letter-spacing: 2px;
-}
-.subtitulo-bodegas {
-    font-size: 23px;
-    font-weight: 300;
-    line-height: 1.65;
-    letter-spacing: 20px;
-    padding: 0;
-    margin-bottom: 10%;
-    letter-spacing: 4px;
-}
-.linea1 {
-    color: #52b02e;
-    width: 144px;
-    border: solid 1px;
-}
-.ubicacion {
-    margin-bottom: 10%;
-}
-.area{
-    margin-bottom: 10%;
-}
-.valor2 {
-    font-size: 20px;
-    font-weight: 200;
-    font-style: normal;
-}
-.asesoria {
-    position: relative;
-}
-.contenedor-de-asesoria {
-    position:;
-    z-index: 1;
-    top: 1%;
-    background-color: #17342e;
-    width: 96%;
-    height: 242px;
-}
-main article p .col-xl-4 {
+
+    body {
+        font-family: Poppins;
+    }
+    header ul {
+        padding: 0;
+        margin-top: 25px;
+    }
+    header ul li{
+        list-style: none;
+        text-decoration: none;
+        padding: 1%;
+        margin: 5px auto;
+    }
+    header ul li a {
+        text-decoration: none;
+        margin-right:56px auto;
+        height: 17px;
+        font-size: 12px;
+        font-weight: 600;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: 2px;
+        text-align: center;
+        color: black;
+    }
+     a:hover {
+        color: black;
+        cursor: pointer;
+        text-decoration: none;
+    }
+    .detalles-del-producto {
+        color: #aeb5bd;
+    }
+    main .asesoria {
+        background-color: #17342e;
+        width: 100%;
+    }
+    main .texto-asesoria{
+        height: 35;
+        font-family: Poppins;
+        font-size: 18px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 5em;
+        letter-spacing: 0.83px;
+    }
+    main form input{
+        margin: 1%;
+    }
+    main form .form-check{
+        margin: 1%;
+    }
+    main form button {
+        margin: 1%;
+    }
+    /*estilos de la seccion "Detalles del proyecto*/
+    .detalles-h1 {
+        font-family: Poppins;
+        font-size: 35px;
+        line-height: 45px;
+        letter-spacing: 1.21px;
+        font-weight: 300px;
+        margin-top: 10%;
+    }
+    .detalles-h1-proyecto {
+        font-weight: bold;
+    }
+    main div .col-sm {
+        border-left: #979797 2px solid;
+        margin: 10px;
+        padding: 10px;
+    }
+    main article div .col-sm-4{
+        background-image: url("/Imagenes/imagenes/imagen2/images.png");
+    }
+    main article p .col-sm-4 {
+        color: #474747;
+    }
+    /* Estilo de anunciado de carrusel */
+   
+    main section div .section-texto {
+        font-family: Poppins;
+        font-size: 35px;
+        line-height: 45px;
+        letter-spacing: 1.21px;
+        font-weight: 300px;
+        margin-top: 10%;
+        margin-bottom:10%;
+    }
+    /* Inicio de estilos de carrusel */
+    /* show 3 items */
+    .carousel-inner .active,
+    .carousel-inner .active + .carousel-item,
+    .carousel-inner .active + .carousel-item + .carousel-item {
+        display: block;
+    }
     
-}
+    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left),
+    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item,
+    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item {
+        transition: none;
+    }
+    
+    .carousel-inner .carousel-item-next,
+    .carousel-inner .carousel-item-prev {
+      position: relative;
+      transform: translate3d(0, 0, 0);
+    }
+    
+    .carousel-inner .active.carousel-item + .carousel-item + .carousel-item + .carousel-item {
+        position: absolute;
+        top: 0;
+        right: -33.3333%;
+        z-index: -1;
+        display: block;
+        visibility: visible;
+    }
+    
+    /* left or forward direction */
+    .active.carousel-item-left + .carousel-item-next.carousel-item-left,
+    .carousel-item-next.carousel-item-left + .carousel-item,
+    .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item,
+    .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item {
+        position: relative;
+        transform: translate3d(-100%, 0, 0);
+        visibility: visible;
+    }
+    
+    /* farthest right hidden item must be abso position for animations */
+    .carousel-inner .carousel-item-prev.carousel-item-right {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        display: block;
+        visibility: visible;
+    }
+    
+    /* right or prev direction */
+    .active.carousel-item-right + .carousel-item-prev.carousel-item-right,
+    .carousel-item-prev.carousel-item-right + .carousel-item,
+    .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item,
+    .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item {
+        position: relative;
+        transform: translate3d(100%, 0, 0);
+        visibility: visible;
+        display: block;
+        visibility: visible;
+    }
+
